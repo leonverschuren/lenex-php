@@ -1,0 +1,22 @@
+{
+  "name": "leonverschuren/lenex",
+  "type": "library",
+  "description": "Swimranking Lenex file format parser",
+  "authors": [
+    {
+      "name": "Leon Verschuren",
+      "email": "lverschuren@hotmail.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=5.4",
+    "symfony/property-access": "^2.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.0.*"
+  },
+  "autoload": {
+    "psr-4": {"leonverschuren\\Lenex\\": "src/"}
+  }
+}
