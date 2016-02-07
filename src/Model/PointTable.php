@@ -11,16 +11,10 @@ class PointTable
     protected $name;
 
     /** @var int */
-    protected $laneMax;
-
-    /** @var int */
-    protected $laneMin;
-
-    /** @var int */
-    protected $temperature;
+    protected $pointTableId;
 
     /** @var string */
-    protected $type;
+    protected $version;
 
     /**
      * @return string
@@ -44,56 +38,18 @@ class PointTable
     /**
      * @return int
      */
-    public function getLaneMax()
+    public function getPointTableId()
     {
-        return $this->laneMax;
+        return $this->pointTableId;
     }
 
     /**
-     * @param int $laneMax
+     * @param int $pointTableId
      * @return $this
      */
-    public function setLaneMax($laneMax)
+    public function setPointTableId($pointTableId)
     {
-        $this->laneMax = $laneMax;
-
-        return $this;
-    }
-
-    /**
-     * @return int
-     */
-    public function getLaneMin()
-    {
-        return $this->laneMin;
-    }
-
-    /**
-     * @param int $laneMin
-     * @return $this
-     */
-    public function setLaneMin($laneMin)
-    {
-        $this->laneMin = $laneMin;
-
-        return $this;
-    }
-
-    /**
-     * @return int
-     */
-    public function getTemperature()
-    {
-        return $this->temperature;
-    }
-
-    /**
-     * @param int $temperature
-     * @return $this
-     */
-    public function setTemperature($temperature)
-    {
-        $this->temperature = $temperature;
+        $this->pointTableId = $pointTableId;
 
         return $this;
     }
@@ -101,18 +57,18 @@ class PointTable
     /**
      * @return string
      */
-    public function getType()
+    public function getVersion()
     {
-        return $this->type;
+        return $this->version;
     }
 
     /**
-     * @param string $type
+     * @param string $version
      * @return $this
      */
-    public function setType($type)
+    public function setVersion($version)
     {
-        $this->type = $type;
+        $this->version = $version;
 
         return $this;
     }

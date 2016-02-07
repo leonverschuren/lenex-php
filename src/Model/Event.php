@@ -12,7 +12,7 @@ class Event
     /** @var AgeGroup[] */
     protected $ageGroups;
 
-    /** @var DateTime */
+    /** @var string */
     protected $dayTime;
 
     /** @var int */
@@ -77,7 +77,7 @@ class Event
     }
 
     /**
-     * @return DateTime
+     * @return string
      */
     public function getDayTime()
     {
@@ -85,7 +85,7 @@ class Event
     }
 
     /**
-     * @param DateTime $dayTime
+     * @param string $dayTime
      * @return $this
      */
     public function setDayTime($dayTime)

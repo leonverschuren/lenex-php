@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LENEX version="3.0">
+    <CONSTRUCTOR name="SPLASH Meet Manager 11" registration="MZ&amp;PC" version="11.38429">
+        <CONTACT name="Swimrankings" street="Weltpoststrasse 5" city="Bern" zip="3015" country="CH"
+                 phone="+41 99 999 99 99" fax="+41 99 999 99 99" email="sales@swimrankings.net"
+                 internet="http://www.swimrankings.net"/>
+    </CONSTRUCTOR>
+    <MEETS>
+        <MEET city="Maastricht" name="Speedo International Friendship Swimmeet Maastricht" course="SCM"
+              deadline="2015-12-01" entrystartdate="2015-08-01" entrytype="OPEN" hostclub.url="http://www.mzpc.nl"
+              nation="NED" organizer="MZ&amp;PC" organizer.url="http://www.swimmeetmaastricht.nl"
+              result.url="http://www.swimmeetmaastricht.nl/2015" state="LB" timing="AUTOMATIC" type="NED.INV"
+              number="11737">
+            <AGEDATE value="2015-12-30" type="CAN.FNQ"/>
+            <POOL name="Geusselbad" lanemin="1" lanemax="8"/>
+            <POINTTABLE pointtableid="3008" name="FINA Point Scoring" version="2015"/>
+            <CONTACT email="swimmeet@mzpc.nl" name="Jan van de Ven"/>
+            <SESSIONS>
+                <SESSION date="2015-12-28" daytime="08:45" name="Swimmeet Maastricht series -dag 1-" number="1"
+                         officialmeeting="08:00" warmupfrom="07:45" warmupuntil="08:30">
+                    <EVENTS>
+                        <EVENT eventid="1127" gender="F" number="19" order="21" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1128" agemax="15" agemin="14" handicap="-1"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1115" gender="M" number="16" order="18" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1116" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1099" gender="M" number="12" order="14" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1100" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1123" gender="M" number="18" order="20" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1124" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1143" gender="F" number="23" order="25" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1144" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1107" gender="M" number="14" order="16" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1108" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1103" gender="F" number="13" order="15" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1104" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1087" gender="F" number="9" order="10" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1088" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1075" gender="M" number="6" order="6" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1076" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1083" gender="M" number="8" order="8" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1084" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1111" gender="F" number="15" order="17" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1112" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1095" gender="F" number="11" order="13" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="47951" agemax="15" agemin="14" handicap="-1"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1055" gender="F" number="1" order="1" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1056" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1059" gender="M" number="2" order="2" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="64431" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1147" gender="M" number="24" order="26" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1148" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1119" gender="F" number="17" order="19" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1120" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1063" gender="F" number="3" order="3" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1064" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1067" gender="M" number="4" order="4" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1068" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1131" gender="M" number="20" order="22" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1132" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1091" gender="M" number="10" order="11" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1092" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1079" gender="F" number="7" order="7" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1080" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1071" gender="F" number="5" order="5" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1072" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1139" gender="M" number="22" order="24" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1140" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1135" gender="F" number="21" order="23" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1136" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                    </EVENTS>
+                </SESSION>
+                <SESSION date="2015-12-28" daytime="18:30" name="Swimmeet Maastricht finales -dag 1-" number="2"
+                         warmupfrom="17:45">
+                    <EVENTS>
+                        <EVENT eventid="1145" gender="F" number="23" order="25" round="FIN" preveventid="1143">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1146" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1061" gender="M" number="2" order="2" round="FIN" preveventid="1059">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1062" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1097" gender="F" number="11" order="12" round="FIN" preveventid="1095">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1098" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1073" gender="F" number="5" order="5" round="FIN" preveventid="1071">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1074" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1085" gender="M" number="8" order="8" round="FIN" preveventid="1083">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1086" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1129" gender="F" number="19" order="21" round="FIN" preveventid="1127">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1130" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1105" gender="F" number="13" order="14" round="FIN" preveventid="1103">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1106" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1057" gender="F" number="1" order="1" round="FIN" preveventid="1055">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1058" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1077" gender="M" number="6" order="6" round="FIN" preveventid="1075">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1078" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1081" gender="F" number="7" order="7" round="FIN" preveventid="1079">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1082" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1109" gender="M" number="14" order="15" round="FIN" preveventid="1107">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1110" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1101" gender="M" number="12" order="13" round="FIN" preveventid="1099">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1102" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1149" gender="M" number="24" order="26" round="FIN" preveventid="1147">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1150" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1153" gender="M" number="26" order="28" round="TIM" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="4" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1154" agemax="15" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1155" gender="F" number="27" order="29" round="TIM" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="4" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1156" agemax="-1" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1157" gender="M" number="28" order="30" round="TIM" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="4" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1158" agemax="-1" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1121" gender="F" number="17" order="19" round="FIN" preveventid="1119">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1122" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1141" gender="M" number="22" order="24" round="FIN" preveventid="1139">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1142" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1065" gender="F" number="3" order="3" round="FIN" preveventid="1063">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1066" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1137" gender="F" number="21" order="23" round="FIN" preveventid="1135">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1138" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1069" gender="M" number="4" order="4" round="FIN" preveventid="1067">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1070" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1117" gender="M" number="16" order="17" round="FIN" preveventid="1115">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1118" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1125" gender="M" number="18" order="20" round="FIN" preveventid="1123">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1126" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1089" gender="F" number="9" order="10" round="FIN" preveventid="1087">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1090" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1133" gender="M" number="20" order="22" round="FIN" preveventid="1131">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1134" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1113" gender="F" number="15" order="16" round="FIN" preveventid="1111">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1114" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1151" gender="F" number="25" order="27" round="TIM" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="4" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1152" agemax="15" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1093" gender="M" number="10" order="11" round="FIN" preveventid="1091">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1094" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                    </EVENTS>
+                </SESSION>
+                <SESSION date="2015-12-29" daytime="08:30" name="Swimmeet Maastricht series -dag 2-" number="3"
+                         warmupfrom="07:45">
+                    <EVENTS>
+                        <EVENT eventid="1215" gender="F" number="43" order="15" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1216" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1183" gender="F" number="35" order="7" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1184" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1247" gender="F" number="51" order="23" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1248" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1223" gender="F" number="45" order="17" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1224" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1199" gender="F" number="39" order="11" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1200" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1175" gender="F" number="33" order="5" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1176" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1231" gender="F" number="47" order="19" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1232" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1195" gender="M" number="38" order="10" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1196" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1191" gender="F" number="37" order="9" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1192" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1171" gender="M" number="32" order="4" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1172" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1211" gender="M" number="42" order="14" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1212" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1219" gender="M" number="44" order="16" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1220" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1167" gender="F" number="31" order="3" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="47997" agemax="15" agemin="14" handicap="-1"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1235" gender="M" number="48" order="20" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1236" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1239" gender="F" number="49" order="21" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1240" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1179" gender="M" number="34" order="6" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1180" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1243" gender="M" number="50" order="22" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1244" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1251" gender="M" number="52" order="24" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1252" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1159" gender="F" number="29" order="1" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1160" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1227" gender="M" number="46" order="18" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1228" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1207" gender="F" number="41" order="13" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1208" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1187" gender="M" number="36" order="8" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1188" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1163" gender="M" number="30" order="2" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1164" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1203" gender="M" number="40" order="12" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1204" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                    </EVENTS>
+                </SESSION>
+                <SESSION date="2015-12-29" daytime="18:30" name="Swimmeet Maastricht finales -dag 2-" number="4"
+                         warmupfrom="17:45">
+                    <EVENTS>
+                        <EVENT eventid="1249" gender="F" number="51" order="23" round="FIN" preveventid="1247">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1250" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1241" gender="F" number="49" order="21" round="FIN" preveventid="1239">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1242" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1181" gender="M" number="34" order="6" round="FIN" preveventid="1179">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1182" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1261" gender="M" number="56" order="28" round="TIM" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="4" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1262" agemax="-1" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1165" gender="M" number="30" order="2" round="FIN" preveventid="1163">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1166" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1189" gender="M" number="36" order="8" round="FIN" preveventid="1187">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1190" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1185" gender="F" number="35" order="7" round="FIN" preveventid="1183">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1186" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1255" gender="F" number="53" order="25" round="TIM" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="4" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1256" agemax="15" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1245" gender="M" number="50" order="22" round="FIN" preveventid="1243">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1246" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1169" gender="F" number="31" order="3" round="FIN" preveventid="1167">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1170" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1209" gender="F" number="41" order="13" round="FIN" preveventid="1207">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1210" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1237" gender="M" number="48" order="20" round="FIN" preveventid="1235">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1238" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1253" gender="M" number="52" order="24" round="FIN" preveventid="1251">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1254" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1257" gender="M" number="54" order="26" round="TIM" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="4" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1258" agemax="15" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1221" gender="M" number="44" order="16" round="FIN" preveventid="1219">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1222" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1225" gender="F" number="45" order="17" round="FIN" preveventid="1223">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1226" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1229" gender="M" number="46" order="18" round="FIN" preveventid="1227">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1230" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1161" gender="F" number="29" order="1" round="FIN" preveventid="1159">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1162" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1205" gender="M" number="40" order="12" round="FIN" preveventid="1203">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1206" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1177" gender="F" number="33" order="5" round="FIN" preveventid="1175">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1178" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1201" gender="F" number="39" order="11" round="FIN" preveventid="1199">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1202" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1217" gender="F" number="43" order="15" round="FIN" preveventid="1215">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1218" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1233" gender="F" number="47" order="19" round="FIN" preveventid="1231">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1234" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1193" gender="F" number="37" order="9" round="FIN" preveventid="1191">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1194" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1173" gender="M" number="32" order="4" round="FIN" preveventid="1171">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1174" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1213" gender="M" number="42" order="14" round="FIN" preveventid="1211">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BACK"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1214" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1197" gender="M" number="38" order="10" round="FIN" preveventid="1195">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FLY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1198" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1259" gender="F" number="55" order="27" round="TIM" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="4" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1260" agemax="-1" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                    </EVENTS>
+                </SESSION>
+                <SESSION date="2015-12-30" daytime="08:30" name="Swimmeet Maastricht series -dag 3-" number="5"
+                         warmupfrom="07:45">
+                    <EVENTS>
+                        <EVENT eventid="1267" gender="M" number="58" order="2" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1268" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1263" gender="F" number="57" order="1" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1264" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1347" gender="M" number="78" order="22" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1348" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1343" gender="F" number="77" order="21" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1344" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1339" gender="M" number="76" order="20" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1340" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1279" gender="F" number="61" order="5" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1280" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1299" gender="M" number="66" order="10" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1300" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1283" gender="M" number="62" order="6" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1284" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1307" gender="M" number="68" order="12" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1308" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1327" gender="F" number="73" order="17" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1328" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1275" gender="M" number="60" order="4" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1276" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1323" gender="M" number="72" order="16" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1324" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1271" gender="F" number="59" order="3" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="47953" agemax="15" agemin="14" handicap="-1"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1319" gender="F" number="71" order="15" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1320" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1295" gender="F" number="65" order="9" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1296" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1355" gender="M" number="80" order="24" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1356" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1351" gender="F" number="79" order="23" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1352" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1287" gender="F" number="63" order="7" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1288" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1315" gender="M" number="70" order="14" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1316" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1311" gender="F" number="69" order="13" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1312" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1303" gender="F" number="67" order="11" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1304" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1291" gender="M" number="64" order="8" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1292" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1331" gender="M" number="74" order="18" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1332" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1335" gender="F" number="75" order="19" round="PRE" preveventid="-1">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1336" agemax="15" agemin="14" handicap="-1"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                    </EVENTS>
+                </SESSION>
+                <SESSION date="2015-12-30" daytime="17:45" name="Swimmeet Maastricht finales -dag 3-" number="6">
+                    <EVENTS>
+                        <EVENT eventid="1269" gender="M" number="58" order="4" round="FIN" preveventid="1267">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1270" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1281" gender="F" number="61" order="7" round="FIN" preveventid="1279">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1282" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1359" gender="X" number="81" order="27" round="TIM" preveventid="-1">
+                            <SWIMSTYLE distance="25" relaycount="10" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="36764" agemax="-1" agemin="11" name="serieus"/>
+                                <AGEGROUP agegroupid="1360" agemax="15" agemin="12" name="serieus"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1353" gender="F" number="79" order="25" round="FIN" preveventid="1351">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1354" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1293" gender="M" number="64" order="10" round="FIN" preveventid="1291">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1294" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1309" gender="M" number="68" order="14" round="FIN" preveventid="1307">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1310" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1337" gender="F" number="75" order="21" round="FIN" preveventid="1335">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1338" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1329" gender="F" number="73" order="19" round="FIN" preveventid="1327">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1330" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1325" gender="M" number="72" order="18" round="FIN" preveventid="1323">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1326" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1289" gender="F" number="63" order="9" round="FIN" preveventid="1287">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1290" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1313" gender="F" number="69" order="15" round="FIN" preveventid="1311">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1314" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1349" gender="M" number="78" order="24" round="FIN" preveventid="1347">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1350" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1305" gender="F" number="67" order="13" round="FIN" preveventid="1303">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1306" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1273" gender="F" number="59" order="5" round="FIN" preveventid="1271">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1274" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1277" gender="M" number="60" order="6" round="FIN" preveventid="1275">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1278" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1265" gender="F" number="57" order="3" round="FIN" preveventid="1263">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1266" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1333" gender="M" number="74" order="20" round="FIN" preveventid="1331">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1334" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1357" gender="M" number="80" order="26" round="FIN" preveventid="1355">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1358" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1317" gender="M" number="70" order="16" round="FIN" preveventid="1315">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1318" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1345" gender="F" number="77" order="23" round="FIN" preveventid="1343">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1346" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1301" gender="M" number="66" order="12" round="FIN" preveventid="1299">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1302" agemax="13" agemin="12"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1285" gender="M" number="62" order="8" round="FIN" preveventid="1283">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="BREAST"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1286" agemax="17" agemin="16"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1341" gender="M" number="76" order="22" round="FIN" preveventid="1339">
+                            <SWIMSTYLE distance="50" relaycount="1" stroke="FREE"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1342" agemax="15" agemin="14"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1297" gender="F" number="65" order="11" round="FIN" preveventid="1295">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1298" agemax="13" agemin="11"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                        <EVENT eventid="1321" gender="F" number="71" order="17" round="FIN" preveventid="1319">
+                            <SWIMSTYLE distance="100" relaycount="1" stroke="MEDLEY"/>
+                            <AGEGROUPS>
+                                <AGEGROUP agegroupid="1322" agemax="-1" agemin="18"/>
+                            </AGEGROUPS>
+                        </EVENT>
+                    </EVENTS>
+                </SESSION>
+            </SESSIONS>
+        </MEET>
+    </MEETS>
+</LENEX>

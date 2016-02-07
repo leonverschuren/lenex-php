@@ -15,10 +15,10 @@ class Session
     /** @var DateTime */
     protected $date;
 
-    /** @var DateTime */
-    protected $daytime;
+    /** @var string */
+    protected $dayTime;
 
-    /** @var DateTime */
+    /** @var string */
     protected $endTime;
 
     /** @var Event[] */
@@ -42,7 +42,7 @@ class Session
     /** @var int */
     protected $number;
 
-    /** @var DateTime */
+    /** @var string */
     protected $officialMeeting;
 
     /** @var Pool */
@@ -51,16 +51,16 @@ class Session
     /** @var string */
     protected $remarksJudge;
 
-    /** @var DateTime */
+    /** @var string */
     protected $teamLeaderMeeting;
 
     /** @var string */
     protected $timing;
 
-    /** @var DateTime */
+    /** @var string */
     protected $warmUpFrom;
 
-    /** @var DateTime */
+    /** @var string */
     protected $warmUpUntil;
 
     /**
@@ -104,18 +104,18 @@ class Session
     /**
      * @return DateTime
      */
-    public function getDaytime()
+    public function getDayTime()
     {
-        return $this->daytime;
+        return $this->dayTime;
     }
 
     /**
-     * @param DateTime $daytime
+     * @param DateTime $dayTime
      * @return $this
      */
-    public function setDaytime($daytime)
+    public function setDayTime($dayTime)
     {
-        $this->daytime = $daytime;
+        $this->dayTime = $dayTime;
 
         return $this;
     }
@@ -273,7 +273,7 @@ class Session
     }
 
     /**
-     * @return DateTime
+     * @return string
      */
     public function getOfficialMeeting()
     {
@@ -281,7 +281,7 @@ class Session
     }
 
     /**
-     * @param DateTime $officialMeeting
+     * @param string $officialMeeting
      * @return $this
      */
     public function setOfficialMeeting($officialMeeting)
@@ -330,7 +330,7 @@ class Session
     }
 
     /**
-     * @return DateTime
+     * @return string
      */
     public function getTeamLeaderMeeting()
     {
@@ -338,7 +338,7 @@ class Session
     }
 
     /**
-     * @param DateTime $teamLeaderMeeting
+     * @param string $teamLeaderMeeting
      * @return $this
      */
     public function setTeamLeaderMeeting($teamLeaderMeeting)
@@ -368,7 +368,7 @@ class Session
     }
 
     /**
-     * @return DateTime
+     * @return string
      */
     public function getWarmUpFrom()
     {
@@ -376,7 +376,7 @@ class Session
     }
 
     /**
-     * @param DateTime $warmUpFrom
+     * @param string $warmUpFrom
      * @return $this
      */
     public function setWarmUpFrom($warmUpFrom)
@@ -387,7 +387,7 @@ class Session
     }
 
     /**
-     * @return DateTime
+     * @return string
      */
     public function getWarmUpUntil()
     {
@@ -395,7 +395,7 @@ class Session
     }
 
     /**
-     * @param DateTime $warmUpUntil
+     * @param string $warmUpUntil
      * @return $this
      */
     public function setWarmUpUntil($warmUpUntil)

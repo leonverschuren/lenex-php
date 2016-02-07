@@ -33,7 +33,7 @@ class Meet
     /** @var DateTime */
     protected $deadline;
 
-    /** @var DateTime */
+    /** @var string */
     protected $deadlineTime;
 
     /** @var DateTime */
@@ -261,7 +261,7 @@ class Meet
     }
 
     /**
-     * @return DateTime
+     * @return string
      */
     public function getDeadlineTime()
     {
@@ -269,7 +269,7 @@ class Meet
     }
 
     /**
-     * @param DateTime $deadlineTime
+     * @param string $deadlineTime
      * @return $this
      */
     public function setDeadlineTime($deadlineTime)
