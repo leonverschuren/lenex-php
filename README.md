@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/leonverschuren/lenex-php.svg?branch=master)](https://travis-ci.org/leonverschuren/lenex-php)
+
 # lenex-php
 
 This library is a PHP5 implementation of the Lenex file format. The format is commonly used in swimmeets and developed by [Swimrankings](https://www.swimrankings.net/).
