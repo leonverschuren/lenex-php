@@ -20,7 +20,7 @@ use leonverschuren\Lenex\Model\PointTable;
 use leonverschuren\Lenex\Model\Pool;
 use leonverschuren\Lenex\Model\Session;
 use leonverschuren\Lenex\Model\SwimStyle;
-use leonverschuren\Lenex\Parser\Parser;
+use leonverschuren\Lenex\Parser;
 
 class ParserTest extends PHPUnit_Framework_TestCase
 {

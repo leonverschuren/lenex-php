@@ -10,7 +10,7 @@
  * file that was distributed with this source code.
  */
 
-use leonverschuren\Lenex\Parser\Reader;
+use leonverschuren\Lenex\Reader;
 
 class ReaderTest extends PHPUnit_Framework_TestCase
 {
