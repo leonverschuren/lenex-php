@@ -17,10 +17,6 @@ use ZipArchive;
 
 class Reader
 {
-    /** @var */
-    protected $mimeTypeGuesser;
-
-
     public function read($path, $mimeType = null)
     {
         if (!is_file($path)) {
@@ -28,18 +24,30 @@ class Reader
         }
 
         if (!isset($mimeType)) {
-            $mimeType = mime_content_type($path);
+            $mimeType = $this->guessMimeType($path);
         }
 
+        return $this->readByMimeType($path, $mimeType);
+    }
+
+
+    protected function guessMimeType($path)
+    {
+        return mime_content_type($path);
+    }
+
+
+    protected function readByMimeType($path, $mimeType)
+    {
         switch ($mimeType) {
-            case 'application/lxf':
+            case 'application/zip':
                 return $this->readFromArchive($path);
-            case 'application/octet-stream':
+            case 'text/xml':
                 return simplexml_load_file($path);
             case 'application/xml':
                 return simplexml_load_file($path);
             default:
-                throw new Exception('The mime type "' . $mimeType . '" is not supported');
+                throw new Exception('The mime type "'.$mimeType.'" is not supported');
         }
     }
 
