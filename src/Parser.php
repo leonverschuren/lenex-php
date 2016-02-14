@@ -16,19 +16,29 @@ use Closure;
 use DateTime;
 use leonverschuren\Lenex\Model\AgeDate;
 use leonverschuren\Lenex\Model\AgeGroup;
+use leonverschuren\Lenex\Model\Athlete;
+use leonverschuren\Lenex\Model\Club;
 use leonverschuren\Lenex\Model\Constructor;
 use leonverschuren\Lenex\Model\Contact;
+use leonverschuren\Lenex\Model\Entry;
 use leonverschuren\Lenex\Model\Event;
 use leonverschuren\Lenex\Model\Fee;
+use leonverschuren\Lenex\Model\Handicap;
 use leonverschuren\Lenex\Model\Heat;
 use leonverschuren\Lenex\Model\Judge;
 use leonverschuren\Lenex\Model\Lenex;
 use leonverschuren\Lenex\Model\Meet;
+use leonverschuren\Lenex\Model\MeetInfo;
+use leonverschuren\Lenex\Model\Official;
 use leonverschuren\Lenex\Model\PointTable;
 use leonverschuren\Lenex\Model\Pool;
 use leonverschuren\Lenex\Model\Qualify;
 use leonverschuren\Lenex\Model\Ranking;
+use leonverschuren\Lenex\Model\Relay;
+use leonverschuren\Lenex\Model\RelayPosition;
+use leonverschuren\Lenex\Model\Result;
 use leonverschuren\Lenex\Model\Session;
+use leonverschuren\Lenex\Model\Split;
 use leonverschuren\Lenex\Model\SwimStyle;
 use leonverschuren\Lenex\Model\TimeStandardRef;
 use SimpleXMLElement;
@@ -40,6 +50,10 @@ class Parser
     /** @var PropertyAccessorInterface */
     private $accessor;
 
+    /**
+     * @param SimpleXMLElement $document
+     * @return Lenex
+     */
     public function parseResult(SimpleXMLElement $document)
     {
         return $this->extractLenex($document);
@@ -147,7 +161,9 @@ class Parser
             'altitude'       => 'altitude',
             'city'           => 'city',
             'city.en'        => 'cityEn',
-            'CLUBS'          => 'clubs',
+            'CLUBS'          => function (Meet $object, $value) {
+                $object->setClubs($this->extractClubs($value));
+            },
             'CONTACT'        => function (Meet $object, $value) {
                 $object->setContact($this->extractContact($value));
             },
@@ -218,6 +234,420 @@ class Parser
         return $this->transform($document, $fields, $object);
     }
 
+    /**
+     * @param SimpleXMLElement $document
+     * @return Club[]
+     */
+    public function extractClubs(SimpleXMLElement $document)
+    {
+        $objects = [];
+
+        foreach ($document->CLUB as $value) {
+            $objects[] = $this->extractClub($value);
+        }
+
+        return $objects;
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Club
+     */
+    public function extractClub(SimpleXMLElement $document)
+    {
+        $object = new Club();
+
+        $fields = [
+            'ATHLETES'     => function (Club $object, $value) {
+                $object->setAthletes($this->extractAthletes($value));
+            },
+            'code'         => 'code',
+            'CONTACT'      => function (Club $object, $value) {
+                $object->setContact($this->extractContact($value));
+            },
+            'name'         => 'name',
+            'name.en'      => 'nameEn',
+            'nation'       => 'nation',
+            'number'       => 'number',
+            'OFFICIALS'    => function (Club $object, $value) {
+                $object->setOfficials($this->extractOfficials($value));
+            },
+            'region'       => 'region',
+            'RELAYS'       => function (Club $object, $value) {
+                $object->setRelays($this->extractRelays($value));
+            },
+            'shortname'    => 'shortName',
+            'shortname.en' => 'shortNameEn',
+            'swrid'        => 'swrId',
+            'type'         => 'type',
+        ];
+
+        return $this->transform($document, $fields, $object);
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Athlete[]
+     */
+    public function extractAthletes(SimpleXMLElement $document)
+    {
+        $objects = [];
+
+        foreach ($document->ATHLETE as $value) {
+            $objects[] = $this->extractAthlete($value);
+        }
+
+        return $objects;
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Athlete
+     */
+    public function extractAthlete(SimpleXMLElement $document)
+    {
+        $object = new Athlete();
+
+        $fields = [
+            'athleteid'    => 'athleteId',
+            'birthdate'    => function (Athlete $object, $value) {
+                $object->setBirthDate(new DateTime($value));
+            },
+            'CLUB'         => function (Athlete $object, $value) {
+                $object->setClub($this->extractClub($value));
+            },
+            'ENTRIES'      => function (Athlete $object, $value) {
+                $object->setEntries($this->extractEntries($value));
+            },
+            'firstname'    => 'firstName',
+            'firstname.en' => 'firstNameEn',
+            'gender'       => 'gender',
+            'HANDICAP'     => function (Athlete $object, $value) {
+                $object->setHandicap($this->extractHandicap($value));
+            },
+            'lastname'     => 'lastName',
+            'lastname.en'  => 'lastNameEn',
+            'level'        => 'level',
+            'license'      => 'license',
+            'nameprefix'   => 'namePrefix',
+            'nation'       => 'nation',
+            'passport'     => 'passport',
+            'RESULTS'      => function (Athlete $object, $value) {
+                $object->setResults($this->extractResults($value));
+            },
+            'swrid'        => 'swrId',
+        ];
+
+        return $this->transform($document, $fields, $object);
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Entry[]
+     */
+    public function extractEntries(SimpleXMLElement $document)
+    {
+        $objects = [];
+
+        foreach ($document->ENTRY as $value) {
+            $objects[] = $this->extractEntry($value);
+        }
+
+        return $objects;
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Entry
+     */
+    public function extractEntry(SimpleXMLElement $document)
+    {
+        $object = new Entry();
+
+        $fields = [
+            'agegroupid'     => 'ageGroupId',
+            'entrycourse'    => 'entryCourse',
+            'entrytime'      => 'entryTime',
+            'eventid'        => 'eventId',
+            'heatid'         => 'heatId',
+            'lane'           => 'lane',
+            'MEETINFO'       => function (Entry $object, $value) {
+                $object->setMeetInfo($this->extractMeetInfo($value));
+            },
+            'RELAYPOSITIONS' => function (Entry $object, $value) {
+                $object->setRelayPositions($this->extractRelayPositions($value));
+            },
+            'status'         => 'status',
+        ];
+
+        return $this->transform($document, $fields, $object);
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return MeetInfo
+     */
+    public function extractMeetInfo(SimpleXMLElement $document)
+    {
+        $object = new MeetInfo();
+
+        $fields = [
+            'approved'          => 'approved',
+            'city'              => 'city',
+            'course'            => 'course',
+            'date'              => 'date',
+            'daytime'           => 'dayTime',
+            'name'              => 'name',
+            'nation'            => 'nation',
+            'POOL'              => function (MeetInfo $object, $value) {
+                $object->setPool($this->extractPool($value));
+            },
+            'qualificationtime' => 'qualificationTime',
+            'state'             => 'state',
+        ];
+
+        return $this->transform($document, $fields, $object);
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return RelayPosition[]
+     */
+    public function extractRelayPositions(SimpleXMLElement $document)
+    {
+        $objects = [];
+
+        foreach ($document->RELAYPOSITION as $value) {
+            $objects[] = $this->extractRelayPosition($value);
+        }
+
+        return $objects;
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return RelayPosition
+     */
+    public function extractRelayPosition(SimpleXMLElement $document)
+    {
+        $object = new RelayPosition();
+
+        $fields = [
+            'ATHLETE'      => function (RelayPosition $object, $value) {
+                $object->setAthlete($this->extractAthlete($value));
+            },
+            'athleteid'    => 'athleteId',
+            'MEETINFO'     => function (RelayPosition $object, $value) {
+                $object->setMeetInfo($this->extractMeetInfo($value));
+            },
+            'number'       => 'number',
+            'reactiontime' => 'reactionTime',
+            'status'       => 'status',
+        ];
+
+        return $this->transform($document, $fields, $object);
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Handicap
+     */
+    public function extractHandicap(SimpleXMLElement $document)
+    {
+        $object = new Handicap();
+
+        $fields = [
+            'breast'    => 'breast',
+            'exception' => 'exception',
+            'free'      => 'free',
+            'medley'    => 'medley',
+        ];
+
+        return $this->transform($document, $fields, $object);
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Result[]
+     */
+    public function extractResults(SimpleXMLElement $document)
+    {
+        $objects = [];
+
+        foreach ($document->RESULT as $value) {
+            $objects[] = $this->extractResult($value);
+        }
+
+        return $objects;
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Result
+     */
+    public function extractResult(SimpleXMLElement $document)
+    {
+        $object = new Result();
+
+        $fields = [
+            'comment'        => 'comment',
+            'eventid'        => 'eventId',
+            'heatid'         => 'heatId',
+            'lane'           => 'lane',
+            'points'         => 'points',
+            'reactiontime'   => 'reactionTime',
+            'RELAYPOSITIONS' => function (Result $object, $value) {
+                $object->setRelayPositions($this->extractRelayPositions($value));
+            },
+            'resultid'       => 'resultId',
+            'status'         => 'status',
+            'SPLITS'         => function (Result $object, $value) {
+                $object->setSplits($this->extractSplits($value));
+            },
+            'swimtime'       => 'swimTime',
+        ];
+
+        return $this->transform($document, $fields, $object);
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Split[]
+     */
+    public function extractSplits(SimpleXMLElement $document)
+    {
+        $objects = [];
+
+        foreach ($document->SPLIT as $value) {
+            $objects[] = $this->extractSplit($value);
+        }
+
+        return $objects;
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Split
+     */
+    public function extractSplit(SimpleXMLElement $document)
+    {
+        $object = new Split();
+
+        $fields = [
+            'distance' => 'distance',
+            'swimtime' => 'swimTime',
+        ];
+
+        return $this->transform($document, $fields, $object);
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Official[]
+     */
+    public function extractOfficials(SimpleXMLElement $document)
+    {
+        $objects = [];
+
+        foreach ($document->OFFICIAL as $value) {
+            $objects[] = $this->extractOfficial($value);
+        }
+
+        return $objects;
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Official
+     */
+    public function extractOfficial(SimpleXMLElement $document)
+    {
+        $object = new Official();
+
+        $fields = [
+            'CONTACT'    => function (Official $object, $value) {
+                $object->setContact($this->extractContact($value));
+            },
+            'firstname'  => 'firstName',
+            'gender'     => 'gender',
+            'grade'      => 'grade',
+            'lastname'   => 'lastName',
+            'license'    => 'license',
+            'nameprefix' => 'namePrefix',
+            'nation'     => 'nation',
+            'officialid' => 'officialId',
+            'passport'   => 'passport',
+        ];
+
+        return $this->transform($document, $fields, $object);
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Official[]
+     */
+    public function extractRelays(SimpleXMLElement $document)
+    {
+        $objects = [];
+
+        foreach ($document->RELAY as $value) {
+            $objects[] = $this->extractRelay($value);
+        }
+
+        return $objects;
+    }
+
+
+    /**
+     * @param SimpleXMLElement $document
+     * @return Relay
+     */
+    public function extractRelay(SimpleXMLElement $document)
+    {
+        $object = new Relay();
+
+        $fields = [
+            'agemax'         => 'ageMax',
+            'agemin'         => 'ageMin',
+            'agetotalmax'    => 'ageTotalMax',
+            'agetotalmin'    => 'ageTotalMin',
+            'CLUB'           => function (Relay $object, $value) {
+                $object->setClub($this->extractClub($value));
+            },
+            'ENTRIES'        => function (Relay $object, $value) {
+                $object->setEntries($this->extractEntries($value));
+            },
+            'gender'         => 'gender',
+            'handicap'       => 'handicap',
+            'name'           => 'name',
+            'number'         => 'number',
+            'RELAYPOSITIONS' => function (Relay $object, $value) {
+                $object->setRelayPositions($this->extractRelayPositions($value));
+            },
+            'RESULTS'        => function (Relay $object, $value) {
+                $object->setResults($this->extractResults($value));
+            },
+        ];
+
+        return $this->transform($document, $fields, $object);
+    }
+
 
     /**
      * @param SimpleXMLElement $document
@@ -227,8 +657,8 @@ class Parser
     {
         $objects = [];
 
-        foreach ($document->FEE as $fee) {
-            $objects[] = $this->extractFee($fee);
+        foreach ($document->FEE as $value) {
+            $objects[] = $this->extractFee($value);
         }
 
         return $objects;
@@ -317,8 +747,8 @@ class Parser
     {
         $objects = [];
 
-        foreach ($document->SESSION as $session) {
-            $objects[] = $this->extractSession($session);
+        foreach ($document->SESSION as $value) {
+            $objects[] = $this->extractSession($value);
         }
 
         return $objects;
@@ -376,8 +806,8 @@ class Parser
     {
         $objects = [];
 
-        foreach ($document->EVENT as $event) {
-            $objects[] = $this->extractEvent($event);
+        foreach ($document->EVENT as $value) {
+            $objects[] = $this->extractEvent($value);
         }
 
         return $objects;
@@ -433,8 +863,8 @@ class Parser
     {
         $objects = [];
 
-        foreach ($document->AGEGROUP as $ageGroup) {
-            $objects[] = $this->extractAgeGroup($ageGroup);
+        foreach ($document->AGEGROUP as $value) {
+            $objects[] = $this->extractAgeGroup($value);
         }
 
         return $objects;
@@ -473,8 +903,8 @@ class Parser
     {
         $objects = [];
 
-        foreach ($document->RANKING as $ranking) {
-            $objects[] = $this->extractRanking($ranking);
+        foreach ($document->RANKING as $value) {
+            $objects[] = $this->extractRanking($value);
         }
 
         return $objects;
@@ -506,8 +936,8 @@ class Parser
     {
         $objects = [];
 
-        foreach ($document->JUDGE as $judge) {
-            $objects[] = $this->extractJudge($judge);
+        foreach ($document->JUDGE as $value) {
+            $objects[] = $this->extractJudge($value);
         }
 
         return $objects;
@@ -540,8 +970,8 @@ class Parser
     {
         $objects = [];
 
-        foreach ($document->HEAT as $heat) {
-            $objects[] = $this->extractHeat($heat);
+        foreach ($document->HEAT as $value) {
+            $objects[] = $this->extractHeat($value);
         }
 
         return $objects;
@@ -599,8 +1029,8 @@ class Parser
     {
         $objects = [];
 
-        foreach ($document->TIMESTANDARDREF as $timeStandardRef) {
-            $objects[] = $this->extractTimeStandardRef($timeStandardRef);
+        foreach ($document->TIMESTANDARDREF as $value) {
+            $objects[] = $this->extractTimeStandardRef($value);
         }
 
         return $objects;
