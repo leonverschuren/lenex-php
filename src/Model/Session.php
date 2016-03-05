@@ -109,7 +109,7 @@ class Session
     }
 
     /**
-     * @return DateTime
+     * @return string
      */
     public function getDayTime()
     {
@@ -117,7 +117,7 @@ class Session
     }
 
     /**
-     * @param DateTime $dayTime
+     * @param string $dayTime
      * @return $this
      */
     public function setDayTime($dayTime)
@@ -128,7 +128,7 @@ class Session
     }
 
     /**
-     * @return DateTime
+     * @return string
      */
     public function getEndTime()
     {
@@ -136,7 +136,7 @@ class Session
     }
 
     /**
-     * @param DateTime $endTime
+     * @param string $endTime
      * @return $this
      */
     public function setEndTime($endTime)
