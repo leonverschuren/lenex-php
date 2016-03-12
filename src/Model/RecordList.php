@@ -38,7 +38,7 @@ class RecordList
     protected $order;
 
     /** @var Record[] */
-    protected $records;
+    protected $records = [];
 
     /** @var string */
     protected $region;

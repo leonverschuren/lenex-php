@@ -33,7 +33,7 @@ class TimeStandardList
     protected $timeStandardListId;
     
     /** @var TimeStandard[] */
-    protected $timeStandards;
+    protected $timeStandards = [];
 
     /** @var string */
     protected $type;

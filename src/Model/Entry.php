@@ -36,7 +36,7 @@ class Entry
     protected $meetInfo;
 
     /** @var RelayPosition[] */
-    protected $relayPositions;
+    protected $relayPositions = [];
 
     /** @var string */
     protected $status;

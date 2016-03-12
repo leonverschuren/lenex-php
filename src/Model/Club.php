@@ -15,7 +15,7 @@ namespace leonverschuren\Lenex\Model;
 class Club
 {
     /** @var Athlete[] */
-    protected $athletes;
+    protected $athletes = [];
 
     /** @var string */
     protected $code;
@@ -36,13 +36,13 @@ class Club
     protected $number;
 
     /** @var Official[] */
-    protected $officials;
+    protected $officials = [];
 
     /** @var string */
     protected $region;
 
     /** @var Relay[] */
-    protected $relays;
+    protected $relays = [];
 
     /** @var string */
     protected $shortName;

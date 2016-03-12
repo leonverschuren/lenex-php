@@ -26,7 +26,7 @@ class Athlete
     protected $club;
 
     /** @var Entry[] */
-    protected $entries;
+    protected $entries = [];
 
     /** @var string */
     protected $firstName;
@@ -62,7 +62,7 @@ class Athlete
     protected $passport;
 
     /** @var Result[] */
-    protected $results;
+    protected $results = [];
 
     /** @var string */
     protected $swrId;

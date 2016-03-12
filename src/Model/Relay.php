@@ -30,7 +30,7 @@ class Relay
     protected $club;
 
     /** @var Entry[] */
-    protected $entries;
+    protected $entries = [];
 
     /** @var string */
     protected $gender;
@@ -45,10 +45,10 @@ class Relay
     protected $number;
 
     /** @var RelayPosition[] */
-    protected $relayPositions;
+    protected $relayPositions = [];
 
     /** @var Result[] */
-    protected $results;
+    protected $results = [];
 
     /**
      * @return int

@@ -29,7 +29,7 @@ class Meet
     protected $cityEn;
 
     /** @var Club[] */
-    protected $clubs;
+    protected $clubs = [];
 
     /** @var Contact */
     protected $contact;
@@ -50,7 +50,7 @@ class Meet
     protected $entryType;
 
     /** @var Fee[] */
-    protected $fees;
+    protected $fees = [];
 
     /** @var string */
     protected $hostClub;
@@ -95,7 +95,7 @@ class Meet
     protected $resultUrl;
 
     /** @var Session[] */
-    protected $sessions;
+    protected $sessions = [];
 
     /** @var string */
     protected $startMethod;

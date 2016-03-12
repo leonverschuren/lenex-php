@@ -30,7 +30,7 @@ class Event
     protected $gender;
 
     /** @var Heat[] */
-    protected $heats;
+    protected $heats = [];
 
     /** @var int */
     protected $maxEntries;
@@ -54,7 +54,7 @@ class Event
     protected $swimStyle;
 
     /** @var TimeStandardRef[] */
-    protected $timeStandardRefs;
+    protected $timeStandardRefs = [];
 
     /** @var string */
     protected $timing;

@@ -33,7 +33,7 @@ class Result
     protected $reactionTime;
 
     /** @var RelayPosition[] */
-    protected $relayPositions;
+    protected $relayPositions = [];
 
     /** @var int */
     protected $resultId;
@@ -42,7 +42,7 @@ class Result
     protected $status;
 
     /** @var Split[] */
-    protected $splits;
+    protected $splits = [];
 
     /** @var string */
     protected $swimTime;

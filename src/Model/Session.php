@@ -29,13 +29,13 @@ class Session
     protected $endTime;
 
     /** @var Event[] */
-    protected $events;
+    protected $events = [];
 
     /** @var Fee[] */
-    protected $fees;
+    protected $fees = [];
 
     /** @var Judge[] */
-    protected $judges;
+    protected $judges = [];
 
     /** @var int */
     protected $maxEntriesAthlete;

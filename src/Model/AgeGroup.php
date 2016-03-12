@@ -45,7 +45,7 @@ class AgeGroup
     protected $name;
 
     /** @var Ranking[] */
-    protected $rankings;
+    protected $rankings = [];
 
     /**
      * @return int

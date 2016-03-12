@@ -18,13 +18,13 @@ class Lenex
     protected $constructor;
 
     /** @var Meet[] */
-    protected $meets;
+    protected $meets = [];
 
     /** @var RecordList[] */
-    protected $recordLists;
+    protected $recordLists = [];
 
     /** @var TimeStandardList[] */
-    protected $timeStandardLists;
+    protected $timeStandardLists = [];
 
     /** @var string */
     protected $version;
