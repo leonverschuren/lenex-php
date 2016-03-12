@@ -208,7 +208,7 @@ class ParserTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(-1, $result->getHandicap());
         $this->assertEquals(null, $result->getLevelMax());
         $this->assertEquals(null, $result->getLevelMin());
-        $this->assertEquals([], $result->getLevels());
+        $this->assertEquals(null, $result->getLevels());
         $this->assertEquals(null, $result->getName());
         $this->assertEquals([], $result->getRankings());
     }
