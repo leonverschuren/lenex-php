@@ -72,14 +72,14 @@ class ParserTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(null, $result->getAltitude());
         $this->assertEquals('Maastricht', $result->getCity());
         $this->assertEquals(null, $result->getCityEn());
-        $this->assertEquals(null, $result->getClubs());
+        $this->assertEquals([], $result->getClubs());
         $this->assertMeetContact($result->getContact());
         $this->assertEquals('SCM', $result->getCourse());
         $this->assertEquals(new DateTime('2015-12-01'), $result->getDeadline());
         $this->assertEquals(null, $result->getDeadlineTime());
         $this->assertEquals(new DateTime('2015-08-01'), $result->getEntryStartDate());
         $this->assertEquals('OPEN', $result->getEntryType());
-        $this->assertEquals(null, $result->getFees());
+        $this->assertEquals([], $result->getFees());
         $this->assertEquals(null, $result->getHostClub());
         $this->assertEquals('http://www.mzpc.nl', $result->getHostClubUrl());
         $this->assertEquals(null, $result->getMaxEntries());
@@ -153,8 +153,8 @@ class ParserTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('08:45', $result->getDayTime());
         $this->assertEquals(null, $result->getEndTime());
         $this->assertEvents($result->getEvents());
-        $this->assertEquals(null, $result->getFees());
-        $this->assertEquals(null, $result->getJudges());
+        $this->assertEquals([], $result->getFees());
+        $this->assertEquals([], $result->getJudges());
         $this->assertEquals(null, $result->getMaxEntriesAthlete());
         $this->assertEquals(null, $result->getMaxEntriesRelay());
         $this->assertEquals('Swimmeet Maastricht series -dag 1-', $result->getName());
@@ -180,7 +180,7 @@ class ParserTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(1127, $result->getEventId());
         $this->assertEquals(null, $result->getFee());
         $this->assertEquals('F', $result->getGender());
-        $this->assertEquals(null, $result->getHeats());
+        $this->assertEquals([], $result->getHeats());
         $this->assertEquals(null, $result->getMaxEntries());
         $this->assertEquals(19, $result->getNumber());
         $this->assertEquals(21, $result->getOrder());
@@ -188,7 +188,7 @@ class ParserTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('PRE', $result->getRound());
         $this->assertEquals(null, $result->getRun());
         $this->assertSwimStyle($result->getSwimStyle());
-        $this->assertEquals(null, $result->getTimeStandardRefs());
+        $this->assertEquals([], $result->getTimeStandardRefs());
         $this->assertEquals(null, $result->getTiming());
         $this->assertEquals(null, $result->getType());
     }
@@ -208,9 +208,9 @@ class ParserTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(-1, $result->getHandicap());
         $this->assertEquals(null, $result->getLevelMax());
         $this->assertEquals(null, $result->getLevelMin());
-        $this->assertEquals(null, $result->getLevels());
+        $this->assertEquals([], $result->getLevels());
         $this->assertEquals(null, $result->getName());
-        $this->assertEquals(null, $result->getRankings());
+        $this->assertEquals([], $result->getRankings());
     }
 
     private function assertSwimStyle(SwimStyle $result)
