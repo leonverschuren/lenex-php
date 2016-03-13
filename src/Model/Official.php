@@ -30,7 +30,7 @@ class Official
     protected $lastName;
 
     /** @var string */
-    protected $licence;
+    protected $license;
 
     /** @var string */
     protected $namePrefix;
@@ -142,18 +142,18 @@ class Official
     /**
      * @return string
      */
-    public function getLicence()
+    public function getLicense()
     {
-        return $this->licence;
+        return $this->license;
     }
 
     /**
-     * @param string $licence
+     * @param string $license
      * @return $this
      */
-    public function setLicence($licence)
+    public function setLicense($license)
     {
-        $this->licence = $licence;
+        $this->license = $license;
 
         return $this;
     }
