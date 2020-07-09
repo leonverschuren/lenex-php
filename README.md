@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/leonverschuren/lenex-php.svg?branch=master)](https://travis-ci.org/leonverschuren/lenex-php)
-
 # lenex-php
+
+![](https://github.com/leonverschuren/lenex-php/workflows/CI/badge.svg)
 
 This library is a PHP5 implementation of the Lenex file format. The format is commonly used in swimmeets and developed by [Swimrankings](https://www.swimrankings.net/).
 The library is able to read an uncompressed `.lef` file or a compressed `.lxf` file and transform it into objects.

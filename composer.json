@@ -18,5 +18,8 @@
   },
   "autoload": {
     "psr-4": {"leonverschuren\\Lenex\\": "src/"}
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --coverage-text"
   }
 }
